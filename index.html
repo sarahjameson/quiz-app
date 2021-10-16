@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="script.js"></script>
     <title>Quiz App</title>
 </head>
 <body>
@@ -24,7 +26,19 @@
             <i class="fas fa-info-circle"></i>
         </div>
         <div class="game-window">
-
+            <div id="question-container" class="hidden">
+                <div class="question">Question</div>
+                    <div class="answer-button">
+                        <button class="btn">Answer</button>
+                        <button class="btn">Answer</button>
+                        <button class="btn">Answer</button>
+                        <button class="btn">Answer</button>
+                    </div>
+            </div>
+            <div class="controls">
+                <button id="start-btn" class="start hide">Start</button>
+                <button id="next-btn" class="next hide">Next</button>
+            </div>
         </div>
     </main>
     <footer>
@@ -36,5 +50,5 @@
             <i class="fab fa-facebook"></i>
         </div>
     </footer>
-</body>
+   </body>
 </html>
