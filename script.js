@@ -6,13 +6,13 @@ const answerButtonsElement = document.getElementById("answer-button")
 const questionNumberText = document.getElementById("question-number")
 const scoreText = document.getElementById("score")
 
+
 let score = 0
 let questionNumber = 1
 
 const MAX_QUESTIONS = 10
 
 console.log(questionNumberText)
-
 
 window.onload = sendApiRequest
 
@@ -25,14 +25,17 @@ async function sendApiRequest() {
 }
 
 function useApiData(data) {
+  if (questionNumber >= MAX_QUESTIONS) {
+    return window.location.assign("end.html")
+  }
   document.querySelector(".category").innerHTML = `Category is ${data.results[0].category}`
   document.querySelector(".difficulty").innerHTML = `This has a level of ${data.results[0].difficulty}`
   document.querySelector(".question").innerHTML = `${data.results[0].question}`
   questionNumberText.innerText = questionNumber + "/" + MAX_QUESTIONS
   scoreText.innerText = score
 
-
   questionNumber++
+  localStorage.setItem("mostRecentScore", score)
 
   let correctAnswerPosition = Math.floor(Math.random() * 4)
 
@@ -84,6 +87,25 @@ function startGame() {
 
 function addToScore () {
   score++
+}
+
+
+
+
+function saveHighScore(e) {
+  console.log("clicked the saved")
+  e.preventDefault
+
+  const score = {
+    score: mostRecentScore,
+    name: username.value,
+  }
+  highScores.push(score)
+  highScores.sort((a, b) => b.score - a.score);
+  highScores.splice(5);
+
+  localStorage.setItem("highScores", JSON.stringify(highScores));
+  return window.location.assign("index.html");
 }
 
 
