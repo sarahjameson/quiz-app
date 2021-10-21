@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Quiz App</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <h1>Quiz App</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Game</a>
+                <a href="highscores.html">High Scores</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+          <div class="tracking">
+            <div id="progressText">
+            </div>
+            <div id="score">
+            </div>
+        </div>
+            <div id="question-container">
+                <div class="question">
+                </div>
+                  <div id="hud-item">
+                    <p class="hud-prefix">
+                      Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                      0
+                    </h1>
+                  </div>
+                </div>
+                <div class="question-choices">
+                <h3 id="question"></h3>
+                <div class="choice-container">
+                  <p class="choice-text" data-number="1"></p>
+                </div>
+                <div class="choice-container">
+                  <p class="choice-text" data-number="2"></p>
+                </div>
+                <div class="choice-container">
+                  <p class="choice-text" data-number="3"></p>
+                </div>
+                <div class="choice-container">
+                  <p class="choice-text" data-number="4"></p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <script src="game.js"></script>
+    </main>
+    <footer>
+        <div class="footer-title">
+            <h2>Quiz App</h2>
+        </div>
+        <div class="social-media">
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+    </footer>
+    <script src="game.js"></script>
+   </body>
+</html>
