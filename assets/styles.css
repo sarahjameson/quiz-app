@@ -113,7 +113,6 @@ h1 {
   }
   
   .flex-center {
-    padding-top: 6rem;
     justify-content: center;
     align-items: center;
   }
@@ -252,8 +251,15 @@ footer {
   color: #aaa;
 }
 
-/* media query for phone */
+/* media queries */
 
+@media (min-width: 650px) {
+  .flex-center {
+    padding-top: 15rem;
+  }
+
+}
+  
 @media (max-width: 640px) {
   nav {
     text-align: center;
