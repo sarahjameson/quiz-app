@@ -76,6 +76,7 @@ h1 {
     text-decoration: none;
     color: #aaa;
     margin: 5px;
+    padding: 3rem;
 }
 
 .nav-links a:hover {
@@ -96,6 +97,14 @@ h1 {
     padding: 2rem;
   }
   
+  #progressText {
+    color: #F20587;
+    font-style: italic;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
   
   .flex-column {
     display: flex;
@@ -125,16 +134,15 @@ h1 {
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #F20587;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #F20587;
-    background-color: white;
+    color: #13171D;
+    background-color: #aaa;
   }
   
   .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 #F20587;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
   }
@@ -235,3 +243,9 @@ h1 {
   .high-score:hover {
     transform: scale(1.025);
   }
+
+footer {
+  display: flex;
+  justify-content: left;
+  color: #aaa;
+}

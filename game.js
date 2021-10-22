@@ -1,8 +1,7 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById("progressText");
-const scoreText = document.getElementById("score");
-const loader = document.getElementById("loader");
+const scoreText = document.getElementById("score")
 const game = document.getElementById("game");
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -54,8 +53,6 @@ startGame = () => {
   score = 0;
   availableQuesions = [...questions];
   getNewQuestion();
-  game.classList.remove("hidden");
-  loader.classList.add("hidden");
 };
 
 getNewQuestion = () => {
@@ -108,4 +105,5 @@ choices.forEach((choice) => {
 incrementScore = (num) => {
   score += num;
   scoreText.innerText = score;
+  console.log("add score", score)
 };

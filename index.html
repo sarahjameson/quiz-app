@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Quiz App</title>
 </head>
 <body>
@@ -17,7 +16,7 @@
             </div>
             <div class="nav-links">
                 <a href="index.html">Game</a>
-                <a href="high-scores.html">High Scores</a>
+                <a href="highscores.html">High Scores</a>
             </div>
         </nav>
     </header>
@@ -26,28 +25,16 @@
             <i class="fas fa-info-circle"></i>
         </div>
         <div class="container">
-            <div id="question-container" class="hidden">
-                <div class="question">Question</div>
-                    <div class="answer-button">
-                        <button class="btn">Answer</button>
-                        <button class="btn">Answer</button>
-                        <button class="btn">Answer</button>
-                        <button class="btn">Answer</button>
-                    </div>
+            <div id="home" class="flex-center flex-column">
+                <a class="btn" href="game.html">Play</a>
+                <a class="btn" href="highscores.html">High Scores</a>
             </div>
-            <div class="controls">
-                <button id="start-btn" class="start hide">Start</button>
-                <button id="next-btn" class="next hide">Next</button>
             </div>
-        </div>
     </main>
     <footer>
         <div class="footer-title">
             <h2>Quiz App</h2>
-        </div>
-        <div class="social-media">
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-facebook"></i>
+            <p>Keep your mind sharp</p>
         </div>
     </footer>
    </body>
