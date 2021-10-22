@@ -1,108 +1,66 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Quiz App
 
-Welcome Sarah Jameson,
+![](assets/images/opening.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+* 💻 [Deployed Site](https://sarahjameson.github.io/quiz-app/index.html)
+* 🗂 [GitHub Repository](https://github.com/sarahjameson/quiz-app)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## About
 
-## Gitpod Reminders
+This quiz app was created for people to test out their trivia skills. The categories and difficulties are random each question so the user is always in for a surprise. At the end, you can see your score and compare with friends. It is a fun way to compete and learn. People of all ages can take something from the Quiz App. Whether it be confirming you're a total smart ass or learning through your mistakes.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Table of Contents
 
-`python3 -m http.server`
+## UX Experience
 
-A blue button should appear to click: _Make Public_,
+### User Stories
 
-Another blue button should appear to click: _Open Browser_.
+* As a visit who is looking to find new ways to spend their time
+    - I want to understand the site and its purpose
+    - I want to view the different capabailties of the site immediately and not be overwhelmed
+    - I want to have links available at all time so I can leave the game or go to the highscores if I get bored during the game
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* As a visitor who wants to bond with their friends in a new way
+    - I want a scoring functionality so we can both compared
+    - I want the site to have a trendy appearance so that the site fits into the narrative of a trendy time no matter the age
+    - I want the user to see that you can learn and compete but involve friends at the same time
 
-A blue button should appear to click: _Make Public_,
+* As a visitor who wants to learn in their spare time
+    - I want to have random categories adn difficulties to keep challenging me and keeping me on my toes
+    - I want a simple to use site that doesn't take away from the activity. Otherwise, I would get sick of clicking on unecessary things
 
-Another blue button should appear to click: _Open Browser_.
+### Design
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* Colour Scheme
+    - For this quiz app, I didn't want to overcomplicate things so selected three colours from [the Adobe website](https://color.adobe.com/explore). The colours were the following:
+    * #F20587
+    * #aaa
+    * #13171D
 
-To log into the Heroku toolbelt CLI:
+![](assets/images/AdobeColor.png)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* Typography
+    - I used Google fonts for the copy
+    - I used Rubik for the logo. It is a fun, modern and trendy font. It shocks the senses in pink and slanted.
+    - Poppins was used for the all the other writing. It is a fun, modern and stylish font which adds to the appearance of the page. It is easy to read and doesn't overcomplate the sensory experience.
 
-------
+## Features
 
-## Release History
+* Header
+    - The header is at the top of the pages
+    - The logo is positioned at the top and is visible on all pages
+    - There are links to direct to the page's different sections
+    - There is a hover effect and the mouse changes when hovered to indicate that it can be clicked
+* Main
+    - The game is the main area's focus
+* Landing page
+    - Gives clear options through two buttons
+    - The buttons are in the middle of the page and give two options. The focus on the buttons gives a sense of excitment. What will happen if I click game? What questions will I get this time?
+* Future Features
+    - It would be nice to make the game more customisable with the options to click specific categories and difficulty levels
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![](assets/images/welcome.png)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![](assets/images/footer.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
